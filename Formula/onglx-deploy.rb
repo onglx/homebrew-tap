@@ -12,7 +12,7 @@ class OnglxDeploy < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/onglx/deploy/releases/download/v0.1.19/onglx-deploy_Darwin_amd64.tar.gz"
+      url "https://github.com/onglx/deploy-cli-npm/releases/download/v0.1.19/onglx-deploy_Darwin_amd64.tar.gz"
       sha256 "7cb027ade88d7acca9e56e8cad93c2f4556f70a70932287564599c9894e01b75"
 
       def install
@@ -23,7 +23,7 @@ class OnglxDeploy < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/onglx/deploy/releases/download/v0.1.19/onglx-deploy_Darwin_arm64.tar.gz"
+      url "https://github.com/onglx/deploy-cli-npm/releases/download/v0.1.19/onglx-deploy_Darwin_arm64.tar.gz"
       sha256 "7cad2eed5d272ff1895605b931494afbd780d9ac47057e08e7409e5629aaebfe"
 
       def install
@@ -37,7 +37,7 @@ class OnglxDeploy < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/onglx/deploy/releases/download/v0.1.19/onglx-deploy_Linux_amd64.tar.gz"
+      url "https://github.com/onglx/deploy-cli-npm/releases/download/v0.1.19/onglx-deploy_Linux_amd64.tar.gz"
       sha256 "6896fa144f3a6d2f29325657c08399e8bfd0bbf625b5e2f250993a7bd3c93e71"
 
       def install
@@ -48,7 +48,7 @@ class OnglxDeploy < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onglx/deploy/releases/download/v0.1.19/onglx-deploy_Linux_arm64.tar.gz"
+      url "https://github.com/onglx/deploy-cli-npm/releases/download/v0.1.19/onglx-deploy_Linux_arm64.tar.gz"
       sha256 "cae7abc5a4c91f7f8581ae238dd36767b82bce238d3d392f6d7dff1e14cc95fd"
 
       def install
