@@ -1,0 +1,39 @@
+{
+  "name": "onglx/homebrew-tap",
+  "description": "Official Homebrew tap for OnglX Deploy CLI",
+  "homepage": "https://onglx.com",
+  "maintainers": [
+    {
+      "name": "OnglX Team",
+      "email": "team@onglx.com"
+    }
+  ],
+  "formulae": [
+    {
+      "name": "onglx-deploy",
+      "description": "Deploy AI APIs to AWS in 30 seconds with 85% cost savings",
+      "homepage": "https://onglx.com",
+      "versions": {
+        "stable": "0.1.17"
+      },
+      "platforms": [
+        "macOS (Intel)",
+        "macOS (Apple Silicon)", 
+        "Linux (x64)",
+        "Linux (arm64)"
+      ]
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onglx/homebrew-tap.git"
+  },
+  "source_repository": {
+    "type": "git", 
+    "url": "https://github.com/onglx/deploy.git",
+    "private": true
+  },
+  "license": "MIT",
+  "updated_at": "2024-01-01T00:00:00Z",
+  "created_at": "2024-01-01T00:00:00Z"
+}
