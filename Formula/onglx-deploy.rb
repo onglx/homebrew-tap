@@ -12,8 +12,8 @@ class OnglxDeploy < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/onglx/deploy/releases/download/v0.1.17/deploy_Darwin_x86_64.tar.gz"
-      sha256 "c90287ebe47f965442bdd3410ac7b60b94a322264fdbfb2575b97809e08d3359"
+      url "https://github.com/onglx/deploy-cli-npm/releases/download/v0.1.17/deploy_Darwin_x86_64.tar.gz"
+      sha256 "6cb9146951680aa4ddffb250bd52a03c3d1499bbd4f3ec23362c1cf51814beef"
 
       def install
         bin.install "onglx-deploy"
@@ -23,8 +23,8 @@ class OnglxDeploy < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/onglx/deploy/releases/download/v0.1.17/deploy_Darwin_arm64.tar.gz"
-      sha256 "7914923e414d209c6f04b01496afd812992615e27ecc22b02c562c62335bf1b1"
+      url "https://github.com/onglx/deploy-cli-npm/releases/download/v0.1.17/deploy_Darwin_arm64.tar.gz"
+      sha256 "365bf689e376860ee10719235aa1bce209dcccfd81db22466ee29cadab0d33af"
 
       def install
         bin.install "onglx-deploy"
@@ -37,8 +37,8 @@ class OnglxDeploy < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/onglx/deploy/releases/download/v0.1.17/deploy_Linux_x86_64.tar.gz"
-      sha256 "84b3e40ff48ecef7e84b6ad03d3b9b6cf8c2b90c4a18ba7d3b21ad3faa10fe82"
+      url "https://github.com/onglx/deploy-cli-npm/releases/download/v0.1.17/deploy_Linux_x86_64.tar.gz"
+      sha256 "a4b946d120e666a3246cbe8317b95341d90328709bf2f99544ad9d85277b7081"
 
       def install
         bin.install "onglx-deploy"
@@ -48,8 +48,8 @@ class OnglxDeploy < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onglx/deploy/releases/download/v0.1.17/deploy_Linux_arm64.tar.gz"
-      sha256 "ad0c2536b0b9a2b14e8a9b98c77bde1a8b2bb1b5a8cf60eb59f6b5b8b1b3b3b3"
+      url "https://github.com/onglx/deploy-cli-npm/releases/download/v0.1.17/deploy_Linux_arm64.tar.gz"
+      sha256 "d14bac70f3e562447b01ec278939d59505fb2a8dcd1d3d5bcc308b660fa2de78"
 
       def install
         bin.install "onglx-deploy"
