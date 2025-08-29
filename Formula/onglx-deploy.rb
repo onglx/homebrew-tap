@@ -5,15 +5,15 @@
 class OnglxDeploy < Formula
   desc "Deploy AI APIs to AWS in 30 seconds with 85% cost savings"
   homepage "https://onglx.dev"
-  version "0.1.21"
+  version "0.1.22"
   license "MIT"
 
   depends_on "aws-cli" => :optional
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/onglx/deploy-cli-npm/releases/download/v0.1.21/onglx-deploy_Darwin_amd64.tar.gz"
-      sha256 "a6b547edc6304faa6256a5ccc3c6efef6271b53b3168d6e17378b06ccf0ba2be"
+      url "https://github.com/onglx/deploy-cli-npm/releases/download/v0.1.22/onglx-deploy_Darwin_amd64.tar.gz"
+      sha256 "43273c15f216727ac5e0de48c7202d33c7cba772d109be0098059d6a0f35cbf4"
 
       def install
         bin.install "onglx-deploy"
@@ -23,8 +23,8 @@ class OnglxDeploy < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/onglx/deploy-cli-npm/releases/download/v0.1.21/onglx-deploy_Darwin_arm64.tar.gz"
-      sha256 "0a391b98dcaff851ec4b050c33bdad609a77baad8e2440df0a727e624a81cd08"
+      url "https://github.com/onglx/deploy-cli-npm/releases/download/v0.1.22/onglx-deploy_Darwin_arm64.tar.gz"
+      sha256 "2dc513e3c64f4e493de1fe2dd490db6e7dc288ec4d18cc5b21e0bae24b13b1d4"
 
       def install
         bin.install "onglx-deploy"
@@ -37,8 +37,8 @@ class OnglxDeploy < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/onglx/deploy-cli-npm/releases/download/v0.1.21/onglx-deploy_Linux_amd64.tar.gz"
-      sha256 "a64a1f6ab7cf512c60374752dcf76ed66657878945b95376770a0d04cdbfc2ae"
+      url "https://github.com/onglx/deploy-cli-npm/releases/download/v0.1.22/onglx-deploy_Linux_amd64.tar.gz"
+      sha256 "b7e3bfafecedfef072edd5dbda22e05597c7bf05aeb114a3f333271d535db0ad"
 
       def install
         bin.install "onglx-deploy"
@@ -48,8 +48,8 @@ class OnglxDeploy < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onglx/deploy-cli-npm/releases/download/v0.1.21/onglx-deploy_Linux_arm64.tar.gz"
-      sha256 "83f089db1eab21cc3c3df95bbf65f9433ff570790e63688bc0ebeb34765d53db"
+      url "https://github.com/onglx/deploy-cli-npm/releases/download/v0.1.22/onglx-deploy_Linux_arm64.tar.gz"
+      sha256 "cc9b1ca4c1c4ddeb5b78300bd0e87b202abffa80509d8b9224eb7f1a1b4a59c7"
 
       def install
         bin.install "onglx-deploy"
